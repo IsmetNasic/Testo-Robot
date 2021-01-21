@@ -8,6 +8,7 @@
     </head>
     <body>
         <div class="body-container">
+            <h1>TESTO ROBOT</h1>
             <div id="start-bg">
                 <button onclick="right()" >Right</button>
                 <button onclick="left()" >Left</button>
@@ -16,10 +17,35 @@
             </div>
                 x: <input type="number" name="x" id="x"><br>
                 y: <input type="number" name="y" id="y"><br>
-                facing: <input type="text" name="z" id="z"><br>
+                f: <input type="text" name="z" id="z"><br>
                 <button onclick="place(document.getElementById('x').value,document.getElementById('y').value,document.getElementById('z').value)">Place</button>
                 <h4 id="place-value"></h4>
         </div>
+        <div class="how-to">
+            <h2>How to play</h2>
+            <br>
+            <br>
+            <h3><strong class="big-text">x, y:</strong> Represent the position,<br>
+                values allowed are 0, 1, 2, 3, 4.
+                <br>
+                <br>
+                <strong class="big-text">f:</strong> Direction that the robot is facing,<br>
+                values allowed are WEST, EAST, NORTH, SOUTH.<br> 
+                <br>
+                Enter all values and press <strong class="big-text">Place</strong> <br> 
+                <br>
+                <strong class="big-text">Right</strong> turns the robot to the right, Left turns it left. <br>
+                <br> 
+                <strong class="big-text">Move</strong> moves the robot in the direction he is facing. <br>
+                <br> 
+                <strong class="big-text">Report</strong> reports the position and facing.
+                <br>
+                <br>
+                Last but not least, <br>
+                You can use the arrow keys on you'r keyboard as well! :) 
+            </h3>
+        </div>
+        
         <canvas id="canvasBoard"></canvas>
     </body>
     <script src="script.js"></script>

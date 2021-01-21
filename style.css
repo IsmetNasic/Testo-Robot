@@ -1,12 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  background: #f3f3f3;
 }
 
 #canvasBoard {
   width: 500px;
   height: 500px;
-  background: #adabab;
+  background: #f3f3f3;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,6 +23,30 @@
 
 .body-container {
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 50px;
+  left: 50px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(19, 17, 17);
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+}
+
+input {
+  padding: 5px;
+}
+
+.how-to {
+  position: absolute;
+  top: 350px;
+  left: 50px;
+  justify-content: center;
+}
+
+.big-text {
+  font-size: 1.5rem;
 }
